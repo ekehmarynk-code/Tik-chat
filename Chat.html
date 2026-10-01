@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tik Chat</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f5f5f5;
+            min-height: 100vh;
+        }
+
+        .header {
+            background: #111;
+            color: white;
+            padding: 18px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 24px;
+        }
+
+        .chat-box {
+            padding: 20px;
+            padding-bottom: 90px;
+        }
+
+        .message {
+            background: white;
+            padding: 12px 15px;
+            border-radius: 15px;
+            margin-bottom: 12px;
+            width: fit-content;
+            max-width: 80%;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+        }
+
+        .message.me {
+            margin-left: auto;
+            background: #111;
+            color: white;
+        }
+
+        .input-area {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: white;
+            padding: 12px;
+            display: flex;
+            gap: 8px;
+            box-shadow: 0 -2px 8px rgba(0,0,0,0.1);
+        }
+
+        .input-area input {
+            flex: 1;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 25px;
+            outline: none;
+        }
+
+        .input-area button {
+            background: #111;
+            color: white;
+            border: none;
+            padding: 12px 18px;
+            border-radius: 25px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>Tik Chat</h1>
+    </div>
+
+    <div class="chat-box">
+
+        <div class="message">
+            Hello! Welcome to Tik Chat 👋
+        </div>
+
+        <div class="message me">
+            Hello Tik Chat!
+        </div>
+
+    </div>
+
+    <div class="input-area">
+        <input type="text" placeholder="Type a message...">
+        <button>Send</button>
+    </div>
+
+</body>
+</html>
