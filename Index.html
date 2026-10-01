@@ -3,16 +3,131 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Tik Chat</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f5f5f5;
+            min-height: 100vh;
+        }
+
+        .header {
+            background: #111;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 30px;
+            margin-bottom: 5px;
+        }
+
+        .header p {
+            font-size: 14px;
+            color: #ccc;
+        }
+
+        .welcome {
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        .welcome h2 {
+            font-size: 28px;
+            margin-bottom: 15px;
+        }
+
+        .welcome p {
+            color: #666;
+            margin-bottom: 30px;
+        }
+
+        .start-button {
+            background: #111;
+            color: white;
+            border: none;
+            padding: 15px 35px;
+            border-radius: 30px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .start-button:hover {
+            background: #333;
+        }
+
+        .features {
+            padding: 20px;
+            display: grid;
+            gap: 15px;
+        }
+
+        .feature {
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+
+        .feature h3 {
+            margin-bottom: 8px;
+        }
+
+        .feature p {
+            color: #777;
+            font-size: 14px;
+        }
+    </style>
 </head>
 
 <body>
 
-    <h1>Welcome to Tik Chat</h1>
+    <div class="header">
+        <h1>Tik Chat</h1>
+        <p>Chat. Connect. Make new friends.</p>
+    </div>
 
-    <p>Chat, connect and make new friends.</p>
+    <div class="welcome">
+        <h2>Welcome to Tik Chat</h2>
 
-    <button>Start Chatting</button>
+        <p>
+            A simple place to chat, connect with people
+            and make new friends.
+        </p>
+
+        <button class="start-button">
+            Start Chatting
+        </button>
+    </div>
+
+    <div class="features">
+
+        <div class="feature">
+            <h3>💬 Private Chat</h3>
+            <p>Send messages and chat with your friends.</p>
+        </div>
+
+        <div class="feature">
+            <h3>👥 Make Friends</h3>
+            <p>Meet new people and connect with others.</p>
+        </div>
+
+        <div class="feature">
+            <h3>🔒 Safe & Simple</h3>
+            <p>A clean and simple chatting experience.</p>
+        </div>
+
+    </div>
 
 </body>
 </html>
